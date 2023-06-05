@@ -24,19 +24,4 @@
 		<module>spring-cloud-api-dict-server</module>
 	</modules>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.ihankun.core.spring.server</groupId>
-			<artifactId>spring-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.ihankun.core.commons</groupId>
-			<artifactId>commons</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.ihankun.core.base</groupId>
-			<artifactId>base</artifactId>
-		</dependency>
-	</dependencies>
-
 </project>
