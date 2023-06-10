@@ -4,10 +4,10 @@
     <resultMap id="DictCountryMap" type="com.ihankun.dict.server.location.country.entity.po.DictCountry">
         <result property="dictCountryId" column="dict_country_id" jdbcType="INTEGER"/>
         <result property="dictCountryName" column="dict_country_name" jdbcType="VARCHAR"/>
-        <result property="inputCode" column="dict_country_name" jdbcType="VARCHAR"/>
-        <result property="fullCode" column="dict_country_name" jdbcType="VARCHAR"/>
-        <result property="wbCode" column="dict_country_name" jdbcType="VARCHAR"/>
-        <result property="orderNo" column="dict_country_name" jdbcType="INTEGER"/>
-        <result property="invalidFlag" column="dict_country_name" jdbcType="VARCHAR"/>
+        <result property="inputCode" column="input_code" jdbcType="VARCHAR"/>
+        <result property="fullCode" column="full_code" jdbcType="VARCHAR"/>
+        <result property="wbCode" column="wb_code" jdbcType="VARCHAR"/>
+        <result property="orderNo" column="order_no" jdbcType="INTEGER"/>
+        <result property="invalidFlag" column="invalid_flag" jdbcType="VARCHAR"/>
     </resultMap>
 </mapper>
