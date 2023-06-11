@@ -21,5 +21,5 @@ public interface DictCountryMapper extends KunBaseMapper<DictCountry> {
      * @return List<DictCountryVO>
      */
     @DS(DataSourceType.DICT)
-    List<DictCountry> findDictCountry(DictCountryQueryDTO queryDTO);
+    List<DictCountry> find(DictCountryQueryDTO queryDTO);
 }
