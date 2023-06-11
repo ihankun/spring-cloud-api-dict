@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ihankun.dict.server.location.country.dao.DictCountryMapper">
+    <resultMap id="DictCountryMap" type="com.ihankun.dict.server.location.country.entity.po.DictCountry">
+        <result property="dictCountryId" column="dict_country_id" jdbcType="INTEGER"/>
+        <result property="dictCountryName" column="dict_country_name" jdbcType="VARCHAR"/>
+        <result property="inputCode" column="input_code" jdbcType="VARCHAR"/>
+        <result property="fullCode" column="full_code" jdbcType="VARCHAR"/>
+        <result property="wbCode" column="wb_code" jdbcType="VARCHAR"/>
+        <result property="orderNo" column="order_no" jdbcType="INTEGER"/>
+        <result property="invalidFlag" column="invalid_flag" jdbcType="VARCHAR"/>
+    </resultMap>
+</mapper>

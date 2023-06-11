@@ -21,6 +21,17 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.ihankun.dict.api</groupId>
+			<artifactId>spring-cloud-api-dict-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ihankun.core.base</groupId>
+			<artifactId>base</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>com.ihankun.core.db</groupId>
 			<artifactId>db</artifactId>
 		</dependency>
@@ -31,10 +42,20 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.ihankun.demo.api</groupId>
-			<artifactId>spring-cloud-api-demo-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.ihankun.core.spring.server</groupId>
+			<artifactId>spring-server</artifactId>
 		</dependency>
+
+
+<!--		<dependency>-->
+<!--			<groupId>org.mapstruct</groupId>-->
+<!--			<artifactId>mapstruct</artifactId>-->
+<!--		</dependency>-->
+
+<!--		<dependency>-->
+<!--			<groupId>org.mapstruct</groupId>-->
+<!--			<artifactId>mapstruct-processor</artifactId>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>
@@ -64,33 +85,12 @@
 				</configuration>
 			</plugin>
 
-<!--			<plugin>-->
-<!--				<groupId>com.spotify</groupId>-->
-<!--				<artifactId>dockerfile-maven-plugin</artifactId>-->
-<!--			</plugin>-->
-
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
 		</plugins>
-<!--		<resources>-->
-<!--			<resource>-->
-<!--				<directory>src/main/java</directory>-->
-<!--				<includes>-->
-<!--					<include>**/*.xml</include>-->
-<!--					<include>**/*.properties</include>-->
-<!--				</includes>-->
-<!--			</resource>-->
-<!--			<resource>-->
-<!--				<directory>src/main/resources</directory>-->
-<!--				<includes>-->
-<!--					<include>**/*.xml</include>-->
-<!--					<include>**/*.properties</include>-->
-<!--				</includes>-->
-<!--			</resource>-->
-<!--		</resources>-->
 	</build>
 
 </project>
