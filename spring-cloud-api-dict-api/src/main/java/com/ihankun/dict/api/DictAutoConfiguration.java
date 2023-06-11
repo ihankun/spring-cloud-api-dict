@@ -5,8 +5,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackageClasses = DictConfiguration.class)
-@EnableFeignClients(basePackageClasses = DictConfiguration.class)
-public class DictConfiguration {
+@ComponentScan(basePackageClasses = DictAutoConfiguration.class)
+@EnableFeignClients(basePackageClasses = DictAutoConfiguration.class)
+public class DictAutoConfiguration {
 
 }

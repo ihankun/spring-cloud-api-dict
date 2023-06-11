@@ -1,5 +1,6 @@
 package com.ihankun.dict.server.location.country.service;
 
+import com.ihankun.dict.api.location.country.entity.dto.DictCountryQueryDTO;
 import com.ihankun.dict.api.location.country.entity.vo.DictCountryVO;
 import org.springframework.validation.annotation.Validated;
 
@@ -16,5 +17,5 @@ public interface DictCountryService {
      * @author hankun
      * @return List<DictCountryVO>
      */
-    List<DictCountryVO> findDictCountry();
+    List<DictCountryVO> findDictCountry(DictCountryQueryDTO queryDTO);
 }

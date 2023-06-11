@@ -31,6 +31,11 @@
 			<artifactId>base</artifactId>
 		</dependency>
 
+<!--		<dependency>-->
+<!--			<groupId>com.ihankun.core.commons</groupId>-->
+<!--			<artifactId>commons</artifactId>-->
+<!--		</dependency>-->
+
 		<dependency>
 			<groupId>com.ihankun.core.db</groupId>
 			<artifactId>db</artifactId>
@@ -46,16 +51,6 @@
 			<artifactId>spring-server</artifactId>
 		</dependency>
 
-
-<!--		<dependency>-->
-<!--			<groupId>org.mapstruct</groupId>-->
-<!--			<artifactId>mapstruct</artifactId>-->
-<!--		</dependency>-->
-
-<!--		<dependency>-->
-<!--			<groupId>org.mapstruct</groupId>-->
-<!--			<artifactId>mapstruct-processor</artifactId>-->
-<!--		</dependency>-->
 	</dependencies>
 
 	<build>
@@ -91,6 +86,16 @@
 			</plugin>
 
 		</plugins>
+
+<!--		<resources>-->
+<!--			<resource>-->
+<!--				<directory>src/main/resources</directory>-->
+<!--				<filtering>true</filtering>-->
+<!--				<includes>-->
+<!--					<include>mybatis/**/*.xml</include>-->
+<!--				</includes>-->
+<!--			</resource>-->
+<!--		</resources>-->
 	</build>
 
 </project>

@@ -10,4 +10,8 @@
         <result property="orderNo" column="order_no" jdbcType="INTEGER"/>
         <result property="invalidFlag" column="invalid_flag" jdbcType="VARCHAR"/>
     </resultMap>
+
+    <select id="findDictCountry" resultType="com.ihankun.dict.server.location.country.entity.po.DictCountry">
+        select * from dict.dict_country
+    </select>
 </mapper>

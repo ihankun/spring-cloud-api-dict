@@ -1,8 +1,6 @@
 package com.ihankun.dict.server.location.country.service.impl;
 
-import com.baomidou.dynamic.datasource.annotation.DS;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.ihankun.core.db.config.DataSourceType;
+import com.ihankun.dict.api.location.country.entity.dto.DictCountryQueryDTO;
 import com.ihankun.dict.api.location.country.entity.vo.DictCountryVO;
 import com.ihankun.dict.server.location.country.dao.DictCountryMapper;
 import com.ihankun.dict.server.location.country.entity.convert.DictCountryConvert;
@@ -28,10 +26,8 @@ public class DictCountryServiceImpl implements DictCountryService {
     private DictCountryConvert dictCountryConvert;
 
     @Override
-    @DS(DataSourceType.DICT)
-    public List<DictCountryVO> findDictCountry() {
-        List<DictCountry> list = dictCountryMapper.selectList(
-                new QueryWrapper<DictCountry>().eq("invalid_flag", "0"));
+    public List<DictCountryVO> findDictCountry(DictCountryQueryDTO queryDTO) {
+        List<DictCountry> list = dictCountryMapper.findDictCountry(queryDTO);
 
         return dictCountryConvert.po2Vo(list);
     }

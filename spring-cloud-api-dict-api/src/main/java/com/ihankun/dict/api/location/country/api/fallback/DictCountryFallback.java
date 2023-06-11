@@ -2,6 +2,7 @@ package com.ihankun.dict.api.location.country.api.fallback;
 
 import com.ihankun.core.base.api.ResponseResult;
 import com.ihankun.dict.api.location.country.api.DictCountryApi;
+import com.ihankun.dict.api.location.country.entity.dto.DictCountryQueryDTO;
 import com.ihankun.dict.api.location.country.entity.vo.DictCountryVO;
 import feign.hystrix.FallbackFactory;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +22,7 @@ public class DictCountryFallback implements FallbackFactory<DictCountryApi> {
         return new DictCountryApi() {
 
             @Override
-            public ResponseResult<List<DictCountryVO>> findDictCountry() {
+            public ResponseResult<List<DictCountryVO>> findDictCountry(DictCountryQueryDTO queryDTO) {
                 return ResponseResult.fallback(throwable);
             }
         };
