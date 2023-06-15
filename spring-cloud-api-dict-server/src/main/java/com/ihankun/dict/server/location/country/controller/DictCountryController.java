@@ -1,6 +1,6 @@
 package com.ihankun.dict.server.location.country.controller;
 
-import com.ihankun.core.base.api.ResponseResult;
+import com.ihankun.core.base.response.ResponseResult;
 import com.ihankun.core.spring.server.annotation.KunRestController;
 import com.ihankun.dict.api.location.country.api.DictCountryApi;
 import com.ihankun.dict.api.location.country.entity.dto.DictCountryDTO;

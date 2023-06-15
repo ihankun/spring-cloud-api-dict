@@ -1,7 +1,7 @@
 package com.ihankun.dict.api.location.country.api;
 
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
-import com.ihankun.core.base.api.ResponseResult;
+import com.ihankun.core.base.response.ResponseResult;
 import com.ihankun.core.spring.api.annotation.api.KunGet;
 import com.ihankun.core.spring.api.annotation.api.KunMapping;
 import com.ihankun.core.spring.api.annotation.api.KunPost;
