@@ -21,7 +21,7 @@ import java.util.List;
  */
 @Api(tags = "国家字典Api")
 @FeignClient(name="${spring.application.api.dict.name}", fallbackFactory= DictCountryFallback.class)
-@KunMapping("/v1/dict/country")
+@KunMapping("/api/v1/dict/country")
 public interface DictCountryApi {
 
     @ApiOperation("查询国家字典")
