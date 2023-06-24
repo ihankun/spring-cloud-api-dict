@@ -53,6 +53,23 @@
 
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<id>maven-ihankun</id>
+			<url>http://192.168.0.123:8081/repository/ihankun-group/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>maven-aliyun</id>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
 	<build>
 		<finalName>${project.artifactId}</finalName>
 
