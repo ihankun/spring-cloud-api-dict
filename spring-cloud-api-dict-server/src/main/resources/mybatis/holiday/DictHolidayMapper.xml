@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ihankun.dict.server.holiday.dao.DictHolidayMapper">
+    <resultMap id="DictHolidayMap" type="com.ihankun.dict.server.holiday.entity.po.DictHoliday">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="date" column="date" jdbcType="VARCHAR"/>
+        <result property="weekDay" column="week_day" jdbcType="INTEGER"/>
+        <result property="yearTips" column="year_tips" jdbcType="VARCHAR"/>
+        <result property="type" column="type" jdbcType="INTEGER"/>
+        <result property="typeDes" column="type_des" jdbcType="VARCHAR"/>
+        <result property="chineseZodiac" column="chinese_zodiac" jdbcType="VARCHAR"/>
+        <result property="solarTerms" column="solar_terms" jdbcType="VARCHAR"/>
+        <result property="lunarCalendar" column="lunar_calendar" jdbcType="VARCHAR"/>
+        <result property="suit" column="suit" jdbcType="VARCHAR"/>
+        <result property="dayOfYear" column="day_of_year" jdbcType="INTEGER"/>
+        <result property="weekOfYear" column="week_of_year" jdbcType="INTEGER"/>
+        <result property="constellation" column="constellation" jdbcType="VARCHAR"/>
+        <result property="indexWorkDayOfMonth" column="index_work_day_of_month" jdbcType="INTEGER"/>
+    </resultMap>
+
+</mapper>
